@@ -1,8 +1,13 @@
+
 ---
 # Reproducible Research - Assignment 1
 ## Author: "Darren Wilkinson"
 Document: "PA1_template.rmd"
-
+---
+output:
+  html_document:
+    keep_md: yes
+---
 ```{r}
 ### Read the data
 data <- read.csv("activity.csv", stringsAsFactors=FALSE)

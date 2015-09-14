@@ -61,12 +61,7 @@ img {
 
 
 
-<hr />
-<div id="reproducible-research---assignment-1" class="section level1">
-<h1>Reproducible Research - Assignment 1</h1>
-<div id="author-darren-wilkinson" class="section level2">
-<h2>Author: “Darren Wilkinson”</h2>
-<p>Document: “PA1_template.rmd”</p>
+<p>output: html_document: keep_md: yes —</p>
 <pre class="r"><code>### Read the data
 data &lt;- read.csv(&quot;activity.csv&quot;, stringsAsFactors=FALSE)
 data$date &lt;- as.Date(data$date, &quot;%Y-%m-%d&quot;)
@@ -161,8 +156,6 @@ plot(weekday$interval, weekday$steps,type=&quot;l&quot;,
 <pre><code>##    Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
 ##   0.000   1.241  32.340  42.370  74.650 166.600</code></pre>
 <p>Despite weekdays having the largest value for steps in an interval, activity is higher at weekends. This is demonstrated with higher means and medians. The activity is also more evenly spread throughout the day (wider interquartile range).</p>
-</div>
-</div>
 
 
 </div>
